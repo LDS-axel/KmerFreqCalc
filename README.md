@@ -42,14 +42,14 @@ General Procedure
 Manual
 ========
 kmer frequency vector
-* python3 kmer_frequence_vector.py -K -fna.path -speciesname -CPU.NUM
--K      -num    the length of kmer      K>=1
--fna.path       -str    the path of dna sequence as an input,whose suffix is fna,fa,ffn,or fasta
--tag.name    -str    the name of sequence
+* python3 kmer_frequence_vector.py -K -fna.path -speciesname -CPU.NUM    
+-K      -num    the length of kmer      K>=1    
+-fna.path       -str    the path of dna sequence as an input,whose suffix is fna,fa,ffn,or fasta    
+-tag.name    -str    the name of sequence     
 -CPU.NUM        -num    the number of CPU be used
 
 distance matrix
-* python3 distance_matrix.py cvtxt.directory CPU.NUM distance-type(COS or EUC)
-cvtxt.directory     -str    The path of cv.txt of species stored      other suffix files must nonexistent
-CPU.NUM     -num            The number of CPU be used
+* python3 distance_matrix.py cvtxt.directory CPU.NUM distance-type(COS or EUC)     
+cvtxt.directory     -str    The path of cv.txt of species stored      other suffix files must nonexistent     
+CPU.NUM     -num            The number of CPU be used    
 distance-type       -str    Euclidean distance or Cosine disimilarity
