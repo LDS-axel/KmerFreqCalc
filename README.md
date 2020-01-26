@@ -24,7 +24,7 @@ General Procedure
     * 1.Read the sequences in the filement into a dictionary.
     * 2.Count the number of kmer in sequences.
     * 3.Make a summary statistic of all kmers' number of all subsequences.
-    * 5.Make a cv.txt formated output.
+    * 4.Make a cv.txt formated output.
         #example.cv.txt
         K
         Significant kmer number
