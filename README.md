@@ -1,4 +1,4 @@
-KmerNumCalc (KNC)    
+KmerFreqCalc (KFC)    
 ==================================    
 DATE:2020-1-24    
 version:0.2.1
@@ -23,8 +23,9 @@ General Procedure
 * kmer frequency vector
     * 1.Read the sequences in the filement into a dictionary.
     * 2.Count the number of kmer in sequences.
-    * 3.Make a summary statistic of all kmers' number of all subsequences.
-    * 4.Make a cv.txt formated output.  
+    * 3.Make a summary statistic of all kmers' number of all subsequences.   
+    * 4.Calculate the frequencies of kmers.
+    * 5.Make a cv.txt formated output.  
     #example.cv.txt  
     K   
     Significant kmer number   
