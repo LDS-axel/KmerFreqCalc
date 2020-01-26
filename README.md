@@ -1,25 +1,25 @@
-KmerNumCalc (KNC)
-==================================
-DATE:2020-1-24
+KmerNumCalc (KNC)    
+==================================    
+DATE:2020-1-24    
 version:0.2.1
 
 
-Author Information:
-==================
-Name:  Liu Shuai
-Department:  Anhui University and the Institute of Zoology, Chinese Academy of Sciences jointly cultivation
+Author Information:    
+==================     
+Name:  Liu Shuai     
+Department:  Anhui University and the Institute of Zoology, Chinese Academy of Sciences jointly cultivation     
 E-mail:  ls2659614061@126.com
 
 
-Supervisor Information:
-======================
-Name:  Wu Qi
-Department:  Institute of Microbiology, Chinese Academy of Sciences
+Supervisor Information:     
+======================     
+Name:  Wu Qi     
+Department:  Institute of Microbiology, Chinese Academy of Sciences    
 E-mail:  wuq@im.ac.cn
 
 
-General Procedure
-=================
+General Procedure     
+=================     
 * kmer frequency vector
     * 1.Read the sequences in the filement into a dictionary.
     * 2.Count the number of kmer in sequences.
