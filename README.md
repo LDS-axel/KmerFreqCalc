@@ -24,16 +24,16 @@ General Procedure
     * 1.Read the sequences in the filement into a dictionary.
     * 2.Count the number of kmer in sequences.
     * 3.Make a summary statistic of all kmers' number of all subsequences.
-    * 4.Make a cv.txt formated output.
-        #example.cv.txt
-        K
-        Significant kmer number
-		Inner product
-        1 0.044418402253529
-        2 -0.13694127815637536
-        3 0.02302543931397616
-        4 0.08209917560394331
-        ......
+    * 4.Make a cv.txt formated output.  
+    #example.cv.txt  
+    K   
+    Significant kmer number   
+    Inner product    
+    1 0.044418402253529    
+    2 -0.13694127815637536    
+    3 0.02302543931397616    
+    4 0.08209917560394331     
+    ......
 * distance matrix
     * 1.Employee Cosine dissimilarity or Euclidean distance to calculate the difference among species
     * 2.Make a .meg format output opened up by MEGA.
