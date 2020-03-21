@@ -76,6 +76,13 @@ def summary(sub_freq):
         freq = integrate(item, freq)
     return freq
 
+def probCal(freq):
+    prob = {}
+    L = length(freq)
+    for i in freq:
+        prob[i] = freq[i]/L
+    return prob
+
 def str2int(Kmer):
     nucleotide = {'A': 0, 'C': 1, 'G': 2, 'T': 3}
     Kmer_list = list(Kmer)
@@ -126,20 +133,21 @@ if __name__ == '__main__':
     
     print("Make a summary statistic for all kmers' number in all subsequences")
     grass_freq = summary(freq_lst)
+    prob = probCal(grass_freq)
     
     index_lst = []
-    for i in grass_freq:
+    for i in prob:
         index_lst.append(i)
     index_lst.sort()
     inner_product = 0
-    for i in grass_freq:
-        inner_product += grass_freq[i]**2
+    for i in prob:
+        inner_product += prob[i]**2
     
 	# Formatted output
     kmerNum = len(index_lst)
     output = str(K)+'\n'+str(kmerNum)+'\n'+str(inner_product)+'\n'
     for i in index_lst:
-        output += str(i)+' '+str(grass_freq[i])+'\n'
+        output += str(i)+' '+str(prob[i])+'\n'
     crtdir('./', 'NUM_K_'+str(K))
     open('NUM_K_'+str(K)+'/'+speciesname+'.cv.txt', 'w').write(output)
     print(time.time()-startTime)
