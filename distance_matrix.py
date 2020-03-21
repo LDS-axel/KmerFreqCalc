@@ -18,8 +18,8 @@ def cosine_dissimilariry(pairsVector):
     dict1, dict2, index1, index2 = {}, {}, set(), set()
     sp_cv1 = open(directory+sp1+'.cv.txt', 'r').readlines()
     sp_cv2 = open(directory+sp2+'.cv.txt', 'r').readlines()
-    inner_product_for_sp1 = int(sp_cv1[2].strip())
-    inner_product_for_sp2 = int(sp_cv2[2].strip())
+    inner_product_for_sp1 = float(sp_cv1[2].strip())
+    inner_product_for_sp2 = float(sp_cv2[2].strip())
     for i in sp_cv1[3:]:
         a = i.strip().split(' ')
         index1.add(a[0])
